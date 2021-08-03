@@ -1,0 +1,11 @@
+<%- include('includes/header.ejs')%>
+
+<form class="product-form" action="./add-product" method="post">
+    <div class="form-group">
+        <label for="title">产品标题</label>
+        <input type="text" class="form-control" id="title" name="title" aria-describedby="titleHelp">
+        <small id="titleHelp" class="form-text text-muted">请输入标题内容</small>
+    </div>
+    <button type="submit" class="btn btn-primary">添加产品</button>
+</form>
+<%- include('includes/footer.ejs')%>
