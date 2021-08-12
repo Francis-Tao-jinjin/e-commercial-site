@@ -1,7 +1,9 @@
 async function getMigrations() {
     const migrations = [
-        require(),
+        require('./1-create-product'),
     ];
+
+    return (await Promise.all(migrations)).map((mi) => mi.migration)
 }
 
 module.exports = getMigrations;

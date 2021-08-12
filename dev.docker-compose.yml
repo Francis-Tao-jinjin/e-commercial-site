@@ -2,7 +2,7 @@ version: '3.3'
 
 services: 
     postgres:
-        image: necolo/postgres-zhparser:latest
+        image: necolo/postgres-zhparser-arm64v8:v1
         restart: always
         volumes:
             - ./docker_volumes/dev_postgres:/var/lib/postgresql/data
